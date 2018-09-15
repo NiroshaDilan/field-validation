@@ -29,7 +29,7 @@ public class RestApiController {
         company.setName(request.getName());
         company.setMobile(request.getMobile());
         company.setLocation(request.getLocation());
-        Status errorDetails = new Status(StatusConstants.HttpConstants.SUCCESS.getCode(), "Success!");
+        Status errorDetails = new Status(StatusConstants.HttpConstants.OK.getCode(), "Success!");
         return new ResponseEntity<>(new Response<>(errorDetails, company), HttpStatus.OK);
     }
 }

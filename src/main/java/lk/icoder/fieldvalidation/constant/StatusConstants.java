@@ -13,10 +13,11 @@ public class StatusConstants {
     @AllArgsConstructor
     public enum HttpConstants {
 
-        SUCCESS(1, "Success"),
-        CUSTOM_FILED_VALIDATION(2, null),
+        CREATED(201, "Created"),
+        OK(200, "Success"),
+        CUSTOM_FILED_VALIDATION(400, "Bad Request"),
         NOT_FOUND(404, "Not Found"),
-        INTERNAL_SERVER_ERROR(0, "System error! Please try after some time");
+        INTERNAL_SERVER_ERROR(500, "System error! Please try after some time");
 
         private Integer code;
         private String desc;
